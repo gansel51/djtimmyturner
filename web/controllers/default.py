@@ -1,10 +1,15 @@
 from web import app
 
-from flask import render_template
+from flask import redirect, render_template
 
 
-# Display the home page
-@app.route('/about')
+# Home Page Display
 @app.route('/')
 def index():
     return render_template('home.html')
+
+
+# Redirects anyone who clicks on about to my personal site
+@app.route('/about')
+def about():
+    return redirect('https://griffinansel.com/')
