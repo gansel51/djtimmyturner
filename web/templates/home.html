@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='home.css') }}">
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block nav %}
+	<li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+{% endblock %}
+
+{% block page_content %}
+	<section id="page_content">
+		<div class="banner">
+			<img src="static/img/stage.jpg" class="img-fluid" alt="Responsive image">
+		</div>
+		<div class="container-fluid">
+			<div class="row justify-content-md-center">
+				<div class="col-md-9 col-md-6">
+					<div class="about">
+
+						<h3>DJ Timmy Turner</h3>
+						<h5>An experienced DJ available to elevate your event!</h5>
+						<p>Music connects us all, and DJ Timmy Turner will use the power of rhythm to make sure your next event is successful!</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+{% endblock %}
